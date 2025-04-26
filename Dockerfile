@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk:17
+FROM azul/zulu-openjdk:21
 
 WORKDIR /server
 
@@ -10,4 +10,4 @@ COPY eula.txt ./
 
 EXPOSE 25565
 
-CMD ["java", "-Xmx3G", "-Xms2G", "-jar", "neoforge-*.jar", "nogui"]
+CMD ["bash", "run.sh"]
