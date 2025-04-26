@@ -9,4 +9,6 @@ services:
     volumes:
       - ./world:/server/world
       - ./backups:/server/backups
+      - ./server.properties:/server/server.properties
+      - ./ops.json:/server/ops.json
     restart: unless-stopped
