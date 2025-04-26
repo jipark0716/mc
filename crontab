@@ -1,1 +1,1 @@
-0 */2 * * * /path/to/backup.sh >> /var/log/mc_backup.log 2>&1
+0 */2 * * * cd /home/azureuser/mc && ./backup.sh >> /var/log/mc_backup.log 2>&1

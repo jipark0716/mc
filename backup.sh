@@ -1,7 +1,10 @@
 #!/bin/bash
 
-BACKUP_DIR="/path/to/backups"
-WORLD_DIR="/path/to/world"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+
+BACKUP_DIR="./backups"
+WORLD_DIR="./world"
 MAX_DISK_USAGE=70
 
 NOW=$(date +"%Y-%m-%d_%H-%M-%S")
